@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- Head is the brain of the website, it tell how to maintain the website. -->
 
 <head>
     <meta charset="UTF-8" />
@@ -8,6 +7,8 @@
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
     <title>Utsav's Personal Site</title>
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -17,24 +18,26 @@
                 <img src="Images\IMG20220729071813 (1)-modified.png" alt="Utsav's Profile Picture" width="250" height="250">
             </td>
             <td>
-                <h1>Utsav Chabhadiya</h1>
+                <h1 id="Name">Utsav Chabhadiya</h1>
 
 
                 <p>
                     <!-- <em> emphasis is also similar-->
-                    Student at <strong> IIT (ISM) Dhanbad </strong> , Pursuing Bachelor of Technology in CSE'25.
+                    <h2 style="color: rgb(78, 64, 52);">Student at <strong> IIT (ISM) Dhanbad </strong> , Pursuing Bachelor of Technology in CSE'25.</h2>
                 </p>
                 <p>
-                    <a href="https://www.linkedin.com/in/utsav-chabhadiya-3a360415a/">My LinkedIn Profile</a>
+
+                    <a href="https://www.linkedin.com/in/utsav-chabhadiya-3a360415a/" target="_blank" style="color: #045c7c;"><img id='linkedin' src="Images\linked in.png" alt="My LinkedIn Profile">
+
+                    </a>
                 </p>
             </td>
         </tr>
 
     </table>
 
-    <hr size="3" noshade>
+    <hr noshade>
     <p>
-    <h2>Description</h2>
         <ul>
             <li>I am a student at IIT (ISM), I am trying each and every day to work on myself and get best of me from previous day. </li>
 
@@ -120,13 +123,15 @@
 
         <hr size="3" noshade>
     </p>
-
-    <a href="hobbies.html"> <strong><em>My Hobbies</strong></em>
-    </a>
-    &nbsp&nbsp
-    <a href="ContactInfo.html">
-        <u>Contact Me</u>
-    </a>
+    <center>
+        <a href="hobbies.html" style="color: brown;"> <strong><em>My Hobbies</strong></em>
+        </a>
+        &nbsp&nbsp
+        <a href="ContactInfo.html">
+            <u>Contact Me</u>
+        </a>
+    </center>
+    <script src="index.js" charset="utf-8"></script>
 
 </body>
 
