@@ -1,0 +1,360 @@
+* {
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Sono", sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+*::selection {
+  background-color: #ffce56;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(168, 219, 202, 0.291);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+li {
+  list-style: none;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+}
+
+button {
+  background-color: rgb(18, 155, 155);
+  padding: 4px 10px;
+  cursor: pointer;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-weight: 600;
+  width: fit-content;
+}
+
+button:hover {
+  transition: color 1.5s;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+  margin-top: 10px;
+}
+
+@keyframes logo {
+  0% {
+    content: "Welcome Nice to See You";
+    font-size: 30px;
+    color: #f97800;
+  }
+  5% {
+    content: "Welcome Nice to See You";
+    color: #f97800d7;
+  }
+  10% {
+    content: "Welcome Nice to See You";
+    color: #f97800a3;
+    font-weight: 0;
+  }
+  15% {
+    content: "Welcome Nice to See You";
+    color: #f9780085;
+    font-weight: 0;
+  }
+  20% {
+    content: "Welcome Nice to See You";
+    color: #f978004c;
+    font-weight: 0;
+  }
+  21% {
+    display: flex;
+    justify-content: center;
+    content: "Utsav Chabhadiya";
+    color: rgba(0, 0, 0, 0);
+  }
+  40% {
+    display: flex;
+    justify-content: center;
+    content: "Utsav Chabhadiya";
+    color: rgba(0, 0, 0, 0.25);
+  }
+  60% {
+    display: flex;
+    justify-content: center;
+    content: "Utsav Chabhadiya";
+    color: rgba(0, 0, 0, 0.5);
+  }
+  100% {
+    display: flex;
+    justify-content: center;
+    content: "Utsav Chabhadiya";
+    color: rgba(0, 0, 0, 1);
+  }
+}
+
+.logo::before {
+  content: "Welcome Nice to See You";
+  color: #f97800;
+  font-size: 30px;
+  animation: logo 3s forwards;
+  animation-delay: 1s;
+}
+
+nav .logo {
+  width: 500px;
+  font-weight: 700;
+}
+
+nav ul {
+  /* border: #296bbd solid 2px; */
+  position: relative;
+  right: 70px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+nav ul li {
+  width: 120px;
+  height: 45px;
+  display: flex;
+  /* justify-content: center space-evenly; */
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 20px;
+  transition: 0.2s hover;
+}
+
+nav ul li:hover {
+  font-size: 23px;
+  background-image: linear-gradient(
+    rgb(18, 155, 155, 0.25),
+    rgb(18, 155, 155, 0.25)
+  );
+  transition: all 0.3s linear;
+  font-weight: 900;
+}
+
+header nav .search {
+  /* border: #296bbd solid 2px; */
+  position: relative;
+  left: 20px;
+  display: flex;
+  gap: 40px;
+  min-width: 390px;
+  width: fit-content;
+  height: 30px;
+  justify-content: center;
+  text-decoration: none;
+}
+
+input {
+  border-radius: 20px;
+  padding: 4px 10px;
+  transition: transform 0.8s;
+}
+
+input:hover {
+  transition-delay: transform 2s;
+  transform: scaleX(1.1);
+  border-color: #296bbd solid 2px;
+  border-width: 4px solid;
+  font-size: 15px;
+}
+
+input:focus {
+  /* transition: height 1s linear; */
+  transform: scaleX(1.1);
+  border-color: #296bbd;
+  border-width: 4px solid;
+  font-size: 15px;
+}
+
+.search button {
+  width: 90px;
+  height: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0px;
+}
+
+.main .main-right {
+  /* border: black solid 3px; */
+  width: 30vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main .main-right img {
+  border-radius: 100px;
+}
+
+.main .main-right .chat {
+  /* border: red solid 3px; */
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+  /* height: 50px; */
+}
+
+.main .main-right .chat button {
+  width: 150px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 15px;
+}
+
+.main .main-left {
+  /* border: black solid 3px; */
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main .main-left h1 {
+  font-size: 50px;
+}
+
+.main .main-left p {
+  font-size: 30px;
+  margin-top: 25px;
+  max-width: 800px;
+  height: fit-content;
+}
+
+.main .main-left p .para,
+.webdev {
+  color: rgb(18, 155, 155);
+  font-weight: 900;
+}
+
+@keyframes webdev {
+  0% {
+    content: "|";
+  }
+  5% {
+    content: "W|";
+  }
+  10% {
+    content: "We|";
+  }
+  15% {
+    content: "Web|";
+  }
+  20% {
+    content: "Web |";
+  }
+  25% {
+    content: "Web D|";
+  }
+  30% {
+    content: "Web De|";
+  }
+  35% {
+    content: "Web Dev|";
+  }
+  40% {
+    content: "Web Deve|";
+  }
+  47% {
+    content: "Web Devel|";
+  }
+  54% {
+    content: "Web Develo|";
+  }
+  61% {
+    content: "Web Develop|";
+  }
+  68% {
+    content: "Web Develope|";
+  }
+  75% {
+    content: "Web Developer|";
+  }
+  80% {
+    content: "Web Developer.";
+  }
+  100% {
+    content: "Web Developer.";
+  }
+}
+
+.main .main-left h1 .webdev::before {
+  content: "Web Developer.";
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  animation: webdev 2s alternate-reverse infinite ease-out;
+  animation-delay: 3s;
+}
+
+.main .main-left h1 .webdev {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffce56;
+  border-radius: 15px;
+  font-size: 55px;
+  padding-left: 10px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+  position: relative;
+  bottom: 20px;
+}
+
+.footer p {
+  font-size: 20px;
+}
+
+.footer ul {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  width: 250px;
+}
+
+.footer ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  /* border: red solid 3px; */
+}
