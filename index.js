@@ -1,1 +1,0 @@
-alert("Welcome! Nice to see you. ");
